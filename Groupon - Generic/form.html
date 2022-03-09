@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Generator</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- js -->
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Nav as a heading -->
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <span class="navbar-brand mb-0 h1">Page Generator</span>
+    </nav>
+
+
+    <div class="container" style="max-width: 970px;">
+
+        <div class="row">
+            <div class="col-12 ">
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Business Name</label>
+                        <input class="form-control" id="name" 
+                            placeholder="Enter business name">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input class="form-control" id="address" 
+                            placeholder="Enter address">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input class="form-control" id="description" 
+                            placeholder="Enter description">
+                    </div>
+                    <div class="form-group">
+                        <label for="highlight">Highlight</label>
+                        <input class="form-control" id="highlight" 
+                            placeholder="Enter highlights">
+                    </div>
+                    <div class="form-group">
+                        <label for="aboutThisDeal">About This Deal</label>
+                        <input class="form-control" id="aboutThisDeal" 
+                            placeholder="Enter about this deal">
+                    </div>
+                    <div class="form-group">
+                        <label for="finePrint">Fine Print</label>
+                        <input class="form-control" id="finePrint" 
+                            placeholder="Enter fine print">
+                    </div>
+                    <div class="form-group">
+                        <label for="about">About Business</label>
+                        <input class="form-control" id="about" 
+                            placeholder="Enter about">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="option1"><b>Option 1</b></label>
+                        <input class="form-control" id="option1" 
+                            placeholder="Enter option 1">
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <input class="form-control" id="option1Regular" placeholder="Regular price">
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control" id="option1Discounted" placeholder="Discounted price">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="option2"><b>Option 2</b></label>
+                        <input class="form-control" id="option2" 
+                            placeholder="Enter option 2">
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <input class="form-control" aria-label="Amount" id="option2Regular" placeholder="Regular price">
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control" aria-label="Amount" id="option2Discounted" placeholder="Discounted price">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="option3"><b>Option 3</b></label>
+                        <input class="form-control" id="option3" 
+                            placeholder="Enter option 3">
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <input class="form-control" id="option3Regular" placeholder="Regular price">
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control" id="option3Discounted" placeholder="Discounted price">
+                        </div>
+                    </div>
+
+                    <button type="submit" onClick="clickTest()" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
