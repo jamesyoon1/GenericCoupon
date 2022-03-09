@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Korean Cuisine - Honey Pig Korean BBQ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    
+    <script src="./js/script.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./images/groupon.png" alt="logo" width="200px">
+        </a>
+        <hr>
+    </nav>
+
+
+    <div class="container" style="max-width: 970px;">
+
+        <!-- picture slides -->
+        <div class="row">
+            <div class="col-12 ">
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 main-image" src="./images/honeypig2.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 main-image" src="./images/honeypig3.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 main-image" src="./images/honeypig.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <h1 class="d-flex justify-content-center" id="name">Honey Pig Korean BBQ</h1>
+                <div class="location"><a href="#map">7220 Columbia Pike, Annandale, VA 22003</a></div>
+                <div class="intro">
+                    <p class="deal-intro">Food and Drinks at Honey Pig Korean BBQ (Up to 30% Off). Three Options
+                        Available.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <hr>
+        </hr>
+
+
+        <div class="row">
+            <div class="col-12 justify-content-center">
+                <!-- OPTION 1-->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 1"  id="option1"checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Annandale: $50 Toward Korean Cuisine; Valid Monday–Thursday
+                        <div class="deal-details">
+                            <div class="regular-price">
+                                $49.99
+                            </div>
+                            <div class="discounted-price">
+                                $21.99
+                            </div>
+                            <div class="discounted-percentage">
+                                56% Off
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- OPTION 2-->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 2" id="option2">
+                    <label class="form-check-label" for="flexRadioDefault2" id="option2Name">
+                        <div class="option-description">
+                        Centreville: $50 Toward Korean Cuisine; Valid Monday–Thursday
+                    </div>
+                        <div class="deal-details">
+                            <div class="regular-price">
+                                $79.99
+                            </div>
+                            <div class="discounted-price">
+                                $42.99
+                            </div>
+                            <div class="discounted-percentage">
+                                46% Off
+                            </div>
+
+                        </div>
+                    </label>
+                </div>
+
+                <!-- OPTION 3-->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 3" id="option3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Ellicott City: $50 Toward Korean Cuisine; Valid Monday–Thursday
+                        <div class="deal-details">
+                            <div class="regular-price">
+                                $99.99
+                            </div>
+                            <div class="discounted-price">
+                                $52.99
+                            </div>
+                            <div class="discounted-percentage">
+                                47% Off
+                            </div>
+
+                        </div>
+                    </label>
+                </div>
+
+                <a href="./html/confirm.html" onClick="clickTest()" class="btn btn-primary btn-lg btn-block mt-4" role="button">Get Deal</a>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12 justify-content-center">
+
+                <div class="details-text">
+                    <div class="text-block">
+                        <h2>Highlights</h2>
+                        <p>Guests can enjoy a variety of dishes, including beef brisket, pork kalbi, and seafood udon
+                            noodle soup</p>
+                    </div>
+                    <div class="text-block">
+                        <h2>About This Deal</h2>
+                        <ul>
+                            <li>Type of Food: Korean</li>
+                            <li>Valid for the Full Menu, Monday-Thursday</li>
+                            <li><a href="http://www.honeypigbbq.com/menu">View the Menu</a></li>
+                        </ul>
+
+                        <h3>Choose From Three Available Locations:</h3>
+                        <ul>
+                            <li>Annandale</li>
+                            <li>Centreville</li>
+                            <li>Ellicott City</li>
+                        </ul>
+                    </div>
+                    <div class="text-block">
+                        <h2>Fine Print</h2>
+                        <p>Promotional value expires 90 days after purchase. Amount paid never expires. Valid for
+                            dine-in only. Must purchase 1 food item. Not valid on federal holidays. Not valid on
+                            Valentine's Day. Not valid on Easter. Not valid on Mother's Day. Not valid on Martin Luther
+                            King Jr. Day and President's Day. Valid only at listed locations. Valid Monday-Thursday. Not
+                            valid for lunch specials. Party cannot request to sit separately to use multiple vouchers on
+                            the same visit. Valid only at listed locations. Limit 1 per person, may buy 2 additional as
+                            gift(s). Limit 1 per visit. Must use promotional value in 1 visit(s). Not valid with other
+                            offers or promotions. Merchant is solely responsible to purchasers for the care and quality
+                            of the advertised goods and services.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h2>About Honey Pig Korean BBQ</h2>
+                        <p>The sounds of sputtering grill tops, clattering utensils, and lively conversation fill the
+                            dining room at Honey Pig BBQ, earning it praise from the Washington Post in 2010 as "one of
+                            the most entertaining barbecues around." The menu brims with both familiar and adventurous
+                            meats, including pork belly, beef ribs, and pork neck. Diners soak in Korean culture via
+                            both the food and K-pop, selecting a protein-rich spread and servers sear their orders on
+                            personal grills for each table.
+                        </p>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.03058154117!2d-77.19634444877522!3d38.83176045831476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b332a9e2f101%3A0x11ad9a7329c9cfdb!2sHoney%20Pig%20BBQ!5e0!3m2!1sen!2sus!4v1646760913148!5m2!1sen!2sus"
+                        width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy" id="map"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+<script>$('.carousel').carousel()
+</script>

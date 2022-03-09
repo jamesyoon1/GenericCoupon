@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(88, 88, 88);
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+
+/* business name and intro ************************************************************* */
+
+main {
+    margin: 20px 50px 50px 50px;
+}
+
+
+h1 {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.navbar-text {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* detail text ************************************************************* */
+
+.text-block {
+    margin: 30px 10px 30px 10px;
+    font-size: 13px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 20px 0px 20px 0px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 7px 0px 7px 0px;
+}
+
+
+/* radio buttons ************************************************************* */
+
+.deal-details {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    
+}
+
+.regular-price {
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+
+.discounted-price {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-right: 10px;
+
+}
+
+.discounted-percentage {
+    background: #c8f7c4;
+    color: rgb(0, 134, 40);
+    outline: none;
+    border: none;
+    padding: 0px 8px 0px 8px;
+    font-weight: 700;
+    padding-right: 10px;
+
+}
+
+.cart {
+    width:100%;
+    padding: 10px 10px;
+    background-color: lightblue;
+    margin: 10px 0px;
+    border-radius: 10px;
+
+}
+
+.filler {
+    margin-bottom: 200px;
+}
+
+/* bottom continue ************************************************************* */
+
+.continue-box {
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+    margin:auto;
+}
+
+.terms {
+    padding: 13px;
+}
+
+
+/* card entry ************************************************************* */
+
+.padding {
+    padding: 5rem !important;
+    margin-left: 300px;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    margin-top: 10px;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #c8ced3;
+    border-radius: .25rem;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #c8ced3
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.form-control:focus {
+    color: #5c6873;
+    background-color: #fff;
+    border-color: #c8ced3 !important;
+    outline: 0;
+    box-shadow: 0 0 0 #F44336
+}
