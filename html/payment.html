@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Payment - Honey Pig Korean BBQ</title>
+    <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/payment.css">
+    <!-- javascript -->
+    <script src="../js/script.js"></script>
+
 
 </head>
 
@@ -24,8 +27,8 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <p class="navbar-text">Make Payment</p>
-                <a class="navbar-brand" href="confirm.html"><img src="../images/back.png" alt="back" width="20"></a>
+                <p class="navbar-text" >Make Payment</p>
+                <a class="navbar-brand" onclick="javascript:history.go(-1)"><img src="../images/back.png" alt="back" width="20"></a>
 
             </div>
         </div>
@@ -38,7 +41,7 @@
         <div class="row">
             <div class="col-12 ">
                 <div class="cart">
-                    <h3 class="item">Annandale: $50 Toward Korean Cruisine; Valid Monday-Thursday</h3>
+                    <h3 class="item">Annandale: $50 Toward Korean Cuisine; Valid Monday-Thursday</h3>
                     <div class="deal-details">
                         <div class="regular-price">
                             $49.99
@@ -158,7 +161,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="continue-box fixed-bottom">
-                    <button type="button" class="btn btn-success btn-lg btn-block rounded-0">Continue to
+                    <button type="button" onClick="changeText()" class="btn btn-success btn-lg btn-block rounded-0">Continue to
                         Checkout</button>
                 </div>
             </div>
@@ -167,6 +170,19 @@
 
 
     </div>
+
+    <script>
+        fetch("../data/b.json")
+            .then((response) => {
+                return response.json();
+            })
+            .then((jsondata) => {
+                //change the title of the webiste
+                document.title = "Make Payment - " + jsondata.name;
+                
+            });
+
+    </script>
 </body>
 
 </html>

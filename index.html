@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Korean Cuisine - Honey Pig Korean BBQ</title>
+    <title id="title"></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,8 +28,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    
-    <script src="./js/script.js"></script>
 
 
 
@@ -73,11 +71,11 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <h1 class="d-flex justify-content-center" id="name">Honey Pig Korean BBQ</h1>
-                <div class="location"><a href="#map">7220 Columbia Pike, Annandale, VA 22003</a></div>
+                <h1 class="d-flex justify-content-center mt-3" id="businessName"></h1>
+                <div class="location"><a href="#map" id="businessAddress"></a>
+                </div>
                 <div class="intro">
-                    <p class="deal-intro">Food and Drinks at Honey Pig Korean BBQ (Up to 30% Off). Three Options
-                        Available.</p>
+                    <p class="deal-intro" id="businessDescription"></p>
                 </div>
             </div>
 
@@ -89,69 +87,70 @@
 
 
         <div class="row">
-            <div class="col-12 justify-content-center">
+            <div class="col-12 text-left">
                 <!-- OPTION 1-->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 1"  id="option1"checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 1" id="radio1" checked>
                     <label class="form-check-label" for="flexRadioDefault1">
-                        Annandale: $50 Toward Korean Cuisine; Valid Monday–Thursday
+                        <div class="option-description" id="option1"></div>
                         <div class="deal-details">
-                            <div class="regular-price">
-                                $49.99
+                            <div class="regular-price" id="option1Regular">
                             </div>
-                            <div class="discounted-price">
-                                $21.99
+                            <div class="discounted-price" id="option1Discounted">
                             </div>
-                            <div class="discounted-percentage">
-                                56% Off
+                            <div class="discounted-percentage" id="option1DiscountPercentage">
                             </div>
+
                         </div>
                     </label>
                 </div>
+
+                <hr>
+                </hr>
 
                 <!-- OPTION 2-->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 2" id="option2">
-                    <label class="form-check-label" for="flexRadioDefault2" id="option2Name">
-                        <div class="option-description">
-                        Centreville: $50 Toward Korean Cuisine; Valid Monday–Thursday
-                    </div>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 2" id="radio2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        <div class="option-description" id="option2"></div>
+
                         <div class="deal-details">
-                            <div class="regular-price">
-                                $79.99
+                            <div class="regular-price" id="option2Regular">
                             </div>
-                            <div class="discounted-price">
-                                $42.99
+                            <div class="discounted-price" id="option2Discounted">
                             </div>
-                            <div class="discounted-percentage">
-                                46% Off
+                            <div class="discounted-percentage" id="option2DiscountPercentage">
                             </div>
 
                         </div>
                     </label>
                 </div>
+
+                <hr>
+                </hr>
 
                 <!-- OPTION 3-->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 3" id="option3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="OPTION 3" id="radio3">
                     <label class="form-check-label" for="flexRadioDefault3">
-                        Ellicott City: $50 Toward Korean Cuisine; Valid Monday–Thursday
+                        <div class="option-description" id="option3"></div>
                         <div class="deal-details">
-                            <div class="regular-price">
-                                $99.99
+                            <div class="regular-price" id="option3Regular">
                             </div>
-                            <div class="discounted-price">
-                                $52.99
+                            <div class="discounted-price" id="option3Discounted">
                             </div>
-                            <div class="discounted-percentage">
-                                47% Off
+                            <div class="discounted-percentage" id="option3DiscountPercentage">
                             </div>
 
                         </div>
                     </label>
                 </div>
 
-                <a href="./html/confirm.html" onClick="clickTest()" class="btn btn-primary btn-lg btn-block mt-4" role="button">Get Deal</a>
+                <hr>
+                </hr>
+
+                <a href="./html/confirm.html" onClick="clickTest()" class="btn btn-primary btn-lg btn-block mt-4"
+                    role="button">Get Deal</a>
 
             </div>
 
@@ -163,45 +162,22 @@
                 <div class="details-text">
                     <div class="text-block">
                         <h2>Highlights</h2>
-                        <p>Guests can enjoy a variety of dishes, including beef brisket, pork kalbi, and seafood udon
-                            noodle soup</p>
+                        <p id="highlight"></p>
                     </div>
                     <div class="text-block">
                         <h2>About This Deal</h2>
-                        <ul>
-                            <li>Type of Food: Korean</li>
-                            <li>Valid for the Full Menu, Monday-Thursday</li>
-                            <li><a href="http://www.honeypigbbq.com/menu">View the Menu</a></li>
-                        </ul>
+                        <div id="aboutThisDeal">
 
-                        <h3>Choose From Three Available Locations:</h3>
-                        <ul>
-                            <li>Annandale</li>
-                            <li>Centreville</li>
-                            <li>Ellicott City</li>
-                        </ul>
+                        </div>
                     </div>
                     <div class="text-block">
                         <h2>Fine Print</h2>
-                        <p>Promotional value expires 90 days after purchase. Amount paid never expires. Valid for
-                            dine-in only. Must purchase 1 food item. Not valid on federal holidays. Not valid on
-                            Valentine's Day. Not valid on Easter. Not valid on Mother's Day. Not valid on Martin Luther
-                            King Jr. Day and President's Day. Valid only at listed locations. Valid Monday-Thursday. Not
-                            valid for lunch specials. Party cannot request to sit separately to use multiple vouchers on
-                            the same visit. Valid only at listed locations. Limit 1 per person, may buy 2 additional as
-                            gift(s). Limit 1 per visit. Must use promotional value in 1 visit(s). Not valid with other
-                            offers or promotions. Merchant is solely responsible to purchasers for the care and quality
-                            of the advertised goods and services.
+                        <p id="finePrint">
                         </p>
                     </div>
                     <div class="text-block">
-                        <h2>About Honey Pig Korean BBQ</h2>
-                        <p>The sounds of sputtering grill tops, clattering utensils, and lively conversation fill the
-                            dining room at Honey Pig BBQ, earning it praise from the Washington Post in 2010 as "one of
-                            the most entertaining barbecues around." The menu brims with both familiar and adventurous
-                            meats, including pork belly, beef ribs, and pork neck. Diners soak in Korean culture via
-                            both the food and K-pop, selecting a protein-rich spread and servers sear their orders on
-                            personal grills for each table.
+                        <h2 id="aboutGeneric"></h2>
+                        <p id="about">
                         </p>
                     </div>
 
@@ -214,6 +190,82 @@
 
 
     </div>
+
+    <script>
+        fetch("./data/b.json")
+            .then((response) => {
+                return response.json();
+            })
+            .then((jsondata) => {
+                //change the title of the webiste
+                document.title = jsondata.name + " - Groupon";
+
+                //name
+                var dest = document.getElementById("businessName");
+                dest.innerHTML = jsondata.name;
+                //address
+                dest = document.getElementById("businessAddress");
+                dest.innerHTML = jsondata.address;
+                //description
+                dest = document.getElementById("businessDescription");
+                dest.innerHTML = jsondata.description;
+                //highlight
+                dest = document.getElementById("highlight");
+                dest.innerHTML = jsondata.highlight;
+                //aboutThisDeal
+                dest = document.getElementById("aboutThisDeal");
+                dest.innerHTML = jsondata.aboutThisDeal;
+                //finePrint
+                dest = document.getElementById("finePrint");
+                dest.innerHTML = jsondata.finePrint;
+                //About + "name"
+                dest = document.getElementById("aboutGeneric");
+                dest.innerHTML = "About " + jsondata.name;
+                //about
+                dest = document.getElementById("about");
+                dest.innerHTML = jsondata.about;
+
+                //option1
+                dest = document.getElementById("option1");
+                dest.innerHTML = jsondata.option1;
+                //option1Regular
+                dest = document.getElementById("option1Regular");
+                dest.innerHTML = "$" + jsondata.option1Regular;
+                //option1Discounted
+                dest = document.getElementById("option1Discounted");
+                dest.innerHTML = "$" + jsondata.option1Discounted;
+                //option1DiscountPercentage
+                dest = document.getElementById("option1DiscountPercentage");
+                dest.innerHTML = jsondata.option1DiscountPercentage + "% Off";
+
+                //option2
+                dest = document.getElementById("option2");
+                dest.innerHTML = jsondata.option2;
+                //option2Regular
+                dest = document.getElementById("option2Regular");
+                dest.innerHTML = "$" + jsondata.option2Regular;
+                //option2Discounted
+                dest = document.getElementById("option2Discounted");
+                dest.innerHTML = "$" + jsondata.option2Discounted;
+                //option2DiscountPercentage
+                dest = document.getElementById("option2DiscountPercentage");
+                dest.innerHTML = jsondata.option2DiscountPercentage + "% Off";
+
+                //option3
+                dest = document.getElementById("option3");
+                dest.innerHTML = jsondata.option3;
+                //option3Regular
+                dest = document.getElementById("option3Regular");
+                dest.innerHTML = "$" + jsondata.option3Regular;
+                //option3Discounted
+                dest = document.getElementById("option3Discounted");
+                dest.innerHTML = "$" + jsondata.option3Discounted;
+                //option3DiscountPercentage
+                dest = document.getElementById("option3DiscountPercentage");
+                dest.innerHTML = jsondata.option3DiscountPercentage + "% Off";
+            });
+
+    </script>
 </body>
 
 </html>

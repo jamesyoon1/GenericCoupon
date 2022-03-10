@@ -1,0 +1,21 @@
+{
+  "name": "Burger Queen",
+  "address": "Fairfax, VA 22003",
+  "description": "Almost Free Burgers, Fries, and Drinks! Up to 99% Off!",
+  "highlight": "We have the best burgers in town. Burger King can't come close!",
+  "aboutThisDeal": "This deal is fantastic. Come check it out.",
+  "finePrint": "We are a non profit.",
+  "about": "Burger Queen is better than Burger King.",
+  "option1": "Annandale: $50 Toward Korean Cuisine; Valid Monday–Thursday",
+  "option1Regular": "100",
+  "option1Discounted": "1",
+  "option1DiscountPercentage": "99",
+  "option2": "Annandale: $50 Toward Korean Cuisine; Valid Monday–Thursday",
+  "option2Regular": "50",
+  "option2Discounted": "1",
+  "option2DiscountPercentage": "98",
+  "option3": "Annandale: $50 Toward Korean Cuisine; Valid Monday–Thursday",
+  "option3Regular": "10",
+  "option3Discounted": "1",
+  "option3DiscountPercentage": "90"
+}

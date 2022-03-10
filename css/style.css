@@ -1,109 +1,106 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: rgb(75, 75, 75);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(75, 75, 75);
 }
-
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
-    font-weight: bold;
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
-
 
 /* business name and intro ************************************************************* */
 
 main {
-    margin: 20px 50px 50px 50px;
+  margin: 20px 50px 50px 50px;
 }
 
-
 h1 {
-    font-size: 30px;
-    margin: 10px 0px;
+  font-size: 30px;
+  margin: 10px 0px;
 }
 
 .locations {
-    font-size: 15px;
-    margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .intro {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /* main image ************************************************************* */
 
 .main-image {
-    width: 100%;
-    border-radius: 3%;
+  width: 100%;
+  border-radius: 3%;
 }
-
 
 /* detail text ************************************************************* */
 
 .text-block {
-    margin: 30px 10px 30px 10px;
-    font-size: 13px;
+  margin: 30px 10px 30px 10px;
+  font-size: 13px;
 }
 
-h1, h2, h3 {
-    font-weight: bold;
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
 
 h2 {
-    font-size: 25px;
-    margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  margin: 20px 0px 20px 0px;
 }
 
 h3 {
-    font-size: 20px;
-    margin: 7px 0px 7px 0px;
+  font-size: 20px;
+  margin: 7px 0px 7px 0px;
 }
-
 
 /* radio buttons ************************************************************* */
 
 .deal-details {
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(202, 202, 202)
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
 }
 
 .regular-price {
-    text-decoration: line-through;
-    padding-right: 10px;
+  text-decoration: line-through;
+  padding-right: 10px;
 }
 
 .discounted-price {
-    color: green;
-    font-weight: bold;
-    padding-right: 10px;
-
+  color: green;
+  font-weight: bold;
+  padding-right: 10px;
 }
 
 .discounted-percentage {
-    background: #c8f7c4;
-    color: rgb(0, 134, 40);
-    outline: none;
-    border: none;
-    padding: 0px 8px 0px 8px;
-    font-weight: 700;
-    border-radius: 10px;
-    padding-right: 10px;
-
+  background: #c8f7c4;
+  color: rgb(0, 134, 40);
+  outline: none;
+  border: none;
+  padding: 0px 8px 0px 8px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding-right: 10px;
 }
 
-input#option1, #option2, #option3 {
-    transform: scale(1.5);
- }
+input#radio1, #radio2, #radio3 {
+  transform: scale(1.5);
+}
+
+
 
 
 
