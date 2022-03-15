@@ -74,7 +74,7 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1"><small id="emailHelp"
                                 class="form-text text-muted">Yes, I want to save money by also receiving personalized
-                                Groupon emails with awesome deals.</small></label>
+                                myDealCoupon emails with awesome deals.</small></label>
                     </div>
                     <!-- button to send verification code -->
                     <button type="button" class="btn btn-primary btn-lg btn-block mt-4 mb-4">Send Code</button>
@@ -101,7 +101,7 @@
 
         </div>
 
-        <!-- filler -->
+        <!-- filler 
         <div class="row">
             <div class="col-12">
                 <div class="filler">
@@ -110,7 +110,12 @@
 
         </div>
 
-        <!-- continue button on the bottom -->
+    -->
+
+        <!-- button to continue -->
+        <a href="payment.html" class="btn btn-success btn-lg btn-block mt-3" role="button">Continue</a>
+
+        <!-- continue button on the bottom 
         <div class="row">
             <div class="col-12">
                 <div class="continue-box fixed-bottom">
@@ -123,6 +128,7 @@
 
         </div>
 
+    -->
 
 
     </div>
@@ -135,7 +141,7 @@
             .then((jsondata) => {
                 //change the title of the webiste
                 document.title = "Confirm Purchase - " + jsondata.name;
-                
+
             });
 
     </script>

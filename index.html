@@ -36,9 +36,9 @@
 <body>
     <!-- Navbar (sit on top) -->
     <!-- Just an image -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-transparent">
         <a class="navbar-brand" href="#">
-            <img src="./images/groupon.png" alt="logo" width="200px">
+            <img src="./images/myDealCoupon.png" alt="logo" width="120px">
         </a>
         <hr>
     </nav>
@@ -50,7 +50,7 @@
         <div class="row">
             <div class="col-12 ">
 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100 main-image" src="./images/honeypig2.jpg" alt="First slide">
@@ -198,7 +198,7 @@
             })
             .then((jsondata) => {
                 //change the title of the webiste
-                document.title = jsondata.name + " - Groupon";
+                document.title = jsondata.name + " - myDealCoupon";
 
                 //name
                 var dest = document.getElementById("businessName");

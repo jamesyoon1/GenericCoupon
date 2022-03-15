@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../css/payment.css">
     <!-- javascript -->
     <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
+
 
 
 </head>
@@ -27,8 +29,9 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <p class="navbar-text" >Make Payment</p>
-                <a class="navbar-brand" onclick="javascript:history.go(-1)"><img src="../images/back.png" alt="back" width="20"></a>
+                <p class="navbar-text">Make Payment</p>
+                <a class="navbar-brand" onclick="javascript:history.go(-1)"><img src="../images/back.png" alt="back"
+                        width="20"></a>
 
             </div>
         </div>
@@ -82,10 +85,10 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="ccnumber">Credit Card Number</label>
+                                    <label for="credit-card">Credit Card Number</label>
                                     <div class="input-group">
                                         <input class="form-control" type="text" placeholder="0000 0000 0000 0000"
-                                            autocomplete="email">
+                                            autocomplete="off" id="credit-card" value="" maxlength="23">
                                         <div class="input-group-append">
                                             <span class="input-group-text">
                                                 <i class="mdi mdi-credit-card"></i>
@@ -131,7 +134,7 @@
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="cvv">CVV/CVC</label>
-                                    <input class="form-control" id="cvv" type="text" placeholder="123">
+                                    <input class="form-control" id="cvv" type="text" placeholder="123" maxlength="4">
                                 </div>
                             </div>
                         </div>
@@ -148,7 +151,11 @@
             </div>
         </div>
 
-        <!-- filler -->
+
+        <!-- button to continue -->
+        <button type="button" onClick="changeText()" class="btn btn-success btn-lg btn-block">Continue to
+            Checkout</button>
+        <!-- filler 
         <div class="row">
             <div class="col-12">
                 <div class="filler">
@@ -156,8 +163,9 @@
             </div>
 
         </div>
+    -->
 
-        <!-- continue button on the bottom -->
+        <!-- continue button on the bottom 
         <div class="row">
             <div class="col-12">
                 <div class="continue-box fixed-bottom">
@@ -167,6 +175,7 @@
             </div>
 
         </div>
+    -->
 
 
     </div>
@@ -179,8 +188,23 @@
             .then((jsondata) => {
                 //change the title of the webiste
                 document.title = "Make Payment - " + jsondata.name;
-                
+
             });
+
+        $('#credit-card').on('keypress change', function () {
+            $(this).val(function (index, value) {
+                return value.replace(/[^0-9]/g, "").replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+            });
+        });
+
+        $('#credit-card').on('paste', function () {
+            $(this).val(function (index, value) {
+                return value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+            });
+            setTimeout(function () {
+                $('#credit-card').trigger("change");
+            });
+        });
 
     </script>
 </body>
