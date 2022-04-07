@@ -17,7 +17,7 @@
     <!-- javascript -->
     <script src="../js/script.js"></script>
     <script src="../js/jquery-3.6.0.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 
@@ -152,10 +152,17 @@
             </div>
         </div>
 
+        <!-- recaptcha -->
+        <form action="?" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LeulVQfAAAAAJR3bw-8XMD0YP9jgCYHHuR5h9d1
+            "></div>
+            <br />
+            <!-- button to continue -->
+            <button type="submit" value="Submit" onClick="changeText()" class="btn btn-success btn-lg btn-block mt-2">Continue to
+                Checkout</button>
+        </form>
 
-        <!-- button to continue -->
-        <button type="button" onClick="changeText()" class="btn btn-success btn-lg btn-block">Continue to
-            Checkout</button>
+
         <!-- filler 
         <div class="row">
             <div class="col-12">
@@ -178,11 +185,7 @@
         </div>
     -->
 
-    <form action="" method="post">
 
-        <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
-    
-      </form>
 
     </div>
 
